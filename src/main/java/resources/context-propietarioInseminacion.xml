@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="idCEInseminacion" class="pe.unjfsc.daw.spring5.entity.CEPropietarioInseminacion"></bean>
+	
+
+	
+	
+	<!-- Bean para el uso de métodos con clase Abstract -->
+	<bean id="idCMAInseminacion" class="pe.unjfsc.daw.spring5.logical.impl.CMAPropietarioInseminacion">
+		<property name="oCEPropietarioInseResponse" ref="idCEInseminacion"></property>
+		<property name="oCEPropietarioInseRequest" ref="idCEInseminacion"></property>
+	</bean>
+
+</beans>
