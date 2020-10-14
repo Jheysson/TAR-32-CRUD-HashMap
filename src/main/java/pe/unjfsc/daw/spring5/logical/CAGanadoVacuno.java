@@ -1,6 +1,5 @@
 package pe.unjfsc.daw.spring5.logical;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import pe.unjfsc.daw.spring5.entity.CEGanadoVacuno;

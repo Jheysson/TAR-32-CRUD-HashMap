@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="idCENatalidad" class="pe.unjfsc.daw.spring5.entity.CENatalidad"></bean>
+	
+	
+	
+	
+	<!-- Bean para el uso de métodos con clase Abstract -->
+	<bean id="idCMANatalidad" class="pe.unjfsc.daw.spring5.logical.impl.CMANatalidad">	
+		<property name="oCENatalidadResponse" ref="idCENatalidad"></property>
+		<property name="oCENatalidadRequest" ref="idCENatalidad"></property>
+	</bean>
+
+</beans>
