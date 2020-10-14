@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="idCEGanadoEnfermo" class="pe.unjfsc.daw.spring5.entity.CEGanadoEnfermo"></bean>
+	
+	
+	
+	
+	<!-- Bean para el uso de métodos con clase Abstract -->
+	<bean id="idCMAGanadoEnfermo" class="pe.unjfsc.daw.spring5.logical.impl.CMAGanadoEnfermo">	
+		<property name="oCEGanadoEnfermoResponse" ref="idCEGanadoEnfermo"></property>
+		<property name="oCEGanadoEnfermoRequest" ref="idCEGanadoEnfermo"></property>
+	</bean>
+
+</beans>
